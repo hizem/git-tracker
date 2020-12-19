@@ -1,5 +1,5 @@
 const express = require("express");
-const configs = require("./config");
+const configs = require("./configs");
 // Load database models
 require('./models');
 // Root Express App
@@ -13,6 +13,9 @@ app.disable("etag");
  */
 app.get("/", (_req, res) => res.status(200).send("ok"));
 
+// Load controllers
+const controllers = require('./controllers');
+app.use('/', controllers);
 const server = app.listen(process.env.PORT, () => {
     const port = server.address().port;
     console.log(`Server listening on port ${port}`);
