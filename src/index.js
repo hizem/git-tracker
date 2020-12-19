@@ -1,5 +1,7 @@
 const express = require("express");
 const configs = require("./config");
+// Load database models
+require('./models');
 // Root Express App
 const app = express();
 // General Settings

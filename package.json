@@ -1,30 +1,35 @@
 {
-  "name": "git-tracker",
-  "version": "1.0.0",
-  "description": "git tracker is an OS tool for tracking git's repo activities",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hizem/git-tracker.git"
-  },
-  "keywords": [
-    "git",
-    "tracker",
-    "analysis"
-  ],
-  "author": "m.hizem",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hizem/git-tracker/issues"
-  },
-  "homepage": "https://github.com/hizem/git-tracker#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.6"
-  }
+    "name": "git-tracker",
+    "version": "1.0.0",
+    "description": "git tracker is an OS tool for tracking git's repo activities",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hizem/git-tracker.git"
+    },
+    "keywords": [
+        "git",
+        "tracker",
+        "analysis"
+    ],
+    "author": "m.hizem",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hizem/git-tracker/issues"
+    },
+    "homepage": "https://github.com/hizem/git-tracker#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "lodash": "^4.17.20",
+        "nodemon": "^2.0.6",
+        "pg": "^8.5.1",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^6.3.5"
+    }
 }
