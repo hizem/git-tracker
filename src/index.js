@@ -11,11 +11,11 @@ app.disable("etag");
  * Init swagger
  * visit /api-docs to browse the docs 
  */
-// const swaggerConfig = configs.swagger;
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerJSDoc = require('swagger-jsdoc');
-// const swaggerDocument = swaggerJSDoc(swaggerConfig);
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+const swaggerConfig = configs.swagger;
+const swaggerUi = require('swagger-ui-express');
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerDocument = swaggerJSDoc(swaggerConfig);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 /**
  *  GET /
