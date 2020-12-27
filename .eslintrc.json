@@ -1,21 +1,19 @@
 {
   "env": {
-    "es6": true,
-    "node": true,
     "commonjs": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
-  "extends": "eslint:recommended",
-  "plugins": ["prettier"],
+  "extends": ["eslint:recommended"],
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 12
   },
   "rules": {
+    "semi": 1,
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
-    "no-console": "error",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": "warn",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
     "switch-colon-spacing": "error",
     "default-case": "error"
   }
