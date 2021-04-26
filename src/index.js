@@ -1,15 +1,17 @@
-const express = require("express");
-const configs = require("./configs");
+const express = require('express');
+const configs = require('./configs');
+console.log('test');
+console.log(configs);
 // Load database models
-require("./models");
+require('./models');
 // Root Express App
 const app = express();
 // General Settings
-app.disable("etag");
+app.disable('etag');
 
 /**
  * Init swagger
- * visit /api-docs to browse the docs 
+ * visit /api-docs to browse the docs
  */
 const swaggerConfig = configs.swagger;
 const swaggerUi = require('swagger-ui-express');
@@ -21,12 +23,12 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
  *  GET /
  *  Health Check
  */
-app.get("/", (_req, res) => res.status(200).send("ok"));
+app.get('/', (_req, res) => res.status(200).send('ok'));
 
 // Load controllers
-const controllers = require("./controllers");
-app.use("/", controllers);
+const controllers = require('./controllers');
+app.use('/', controllers);
 const server = app.listen(process.env.PORT, () => {
-    const port = server.address().port;
-    console.log(`Server listening on port ${port}`);
+  const port = server.address().port;
+  console.log(`Server listening on port ${port}`);
 });
