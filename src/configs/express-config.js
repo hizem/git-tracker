@@ -1,17 +1,17 @@
-const express = require("express");
+const express = require('express');
 /**
  *  3rd party dependencies
  */
-const cors = require("cors");
+const cors = require('cors');
 
 /**
  *  Cors config
  */
 const corsOptions = {
-    origin: process.env.URL_APP,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true,
-    // exposedHeaders: ['x-auth-token']
+  origin: process.env.URL_APP,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  // exposedHeaders: ['x-auth-token']
 };
 
 const app = express();

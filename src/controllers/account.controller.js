@@ -1,6 +1,6 @@
-const router = require("express").Router();
-const asyncHandler = require("express-async-handler");
-const accountService = require("../service").accountService;
+const router = require('express').Router();
+const asyncHandler = require('express-async-handler');
+const accountService = require('../service').accountService;
 
 /**
  * @swagger
@@ -12,11 +12,11 @@ const accountService = require("../service").accountService;
  *      Successful
  */
 router.get(
-    "",
-    asyncHandler(async(req, res, next) => {
-        if (!req.user) return res.json({ user: null });
-        await accountService.getUser();
-        res.json({ user });
-    })
+  '',
+  asyncHandler(async (req, res, next) => {
+    if (!req.user) return res.json({ user: null });
+    await accountService.getUser();
+    res.json({ user });
+  })
 );
 module.exports = router;

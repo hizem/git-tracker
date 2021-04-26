@@ -1,44 +1,45 @@
 {
-    "name": "git-tracker",
-    "version": "1.0.0",
-    "description": "git tracker is an OS tool for tracking git's repo activities",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon ./src"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/hizem/git-tracker.git"
-    },
-    "keywords": [
-        "git",
-        "tracker",
-        "analysis"
-    ],
-    "author": "m.hizem",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/hizem/git-tracker/issues"
-    },
-    "homepage": "https://github.com/hizem/git-tracker#readme",
-    "dependencies": {
-        "@octokit/rest": "^18.0.12",
-        "cors": "^2.8.5",
-        "dotenv": "^8.2.0",
-        "express": "^4.17.1",
-        "express-async-handler": "^1.1.4",
-        "lodash": "^4.17.20",
-        "nodemon": "^2.0.6",
-        "passport": "^0.4.1",
-        "passport-oauth2": "^1.5.0",
-        "pg": "^8.5.1",
-        "pg-hstore": "^2.3.3",
-        "sequelize": "^6.3.5",
-        "swagger-jsdoc": "^6.0.0",
-        "swagger-ui-express": "^4.1.6"
-    },
-    "devDependencies": {
-        "eslint": "^7.16.0"
-    }
+  "name": "git-tracker",
+  "version": "1.0.0",
+  "description": "git tracker is an OS tool for tracking git's repo activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hizem/git-tracker.git"
+  },
+  "keywords": [
+    "git",
+    "tracker",
+    "analysis"
+  ],
+  "author": "m.hizem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hizem/git-tracker/issues"
+  },
+  "homepage": "https://github.com/hizem/git-tracker#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-oauth2": "^1.5.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0"
+  }
 }
